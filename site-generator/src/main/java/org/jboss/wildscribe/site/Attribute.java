@@ -16,8 +16,8 @@ public class Attribute implements Comparable<Attribute> {
     private final boolean nillable;
     private final boolean expressionsAllowed;
     private final String defaultValue;
-    private final Integer min;
-    private final Integer max;
+    private final String min;
+    private final String max;
     private final String accessType;
     private final String storage;
     private final Deprecated deprecated;
@@ -27,7 +27,7 @@ public class Attribute implements Comparable<Attribute> {
     private final String stability;
     private final Collection<String> allowedValues;
 
-    public Attribute(String name, String description, String type, boolean nillable, boolean expressionsAllowed, String defaultValue, Integer min, Integer max, String accessType, String storage, Deprecated deprecated, String unit, String restartRequired, String capabilityReference, String stability) {
+    public Attribute(String name, String description, String type, boolean nillable, boolean expressionsAllowed, String defaultValue, String min, String max, String accessType, String storage, Deprecated deprecated, String unit, String restartRequired, String capabilityReference, String stability) {
         this.name = name;
         this.description = description;
         this.type = type;
@@ -75,11 +75,11 @@ public class Attribute implements Comparable<Attribute> {
         return defaultValue;
     }
 
-    public Integer getMin() {
+    public String getMin() {
         return min;
     }
 
-    public Integer getMax() {
+    public String getMax() {
         return max;
     }
 
@@ -131,13 +131,13 @@ public class Attribute implements Comparable<Attribute> {
         if (property.getValue().hasDefined("expressions-allowed")) {
             expressionsAllowed = property.getValue().get("expressions-allowed").asBoolean();
         }
-        Integer min = null;
+        String min = null;
         if (property.getValue().hasDefined("min")) {
-            min = property.getValue().get("min").asInt();
+            min = property.getValue().get("min").asString();
         }
-        Integer max = null;
+        String max = null;
         if (property.getValue().hasDefined("max")) {
-            max = property.getValue().get("max").asInt();
+            max = property.getValue().get("max").asString();
         }
         String accessType = property.getValue().get("access-type").asString();
         String storage = property.getValue().get("storage").asString();
