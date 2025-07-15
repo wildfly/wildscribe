@@ -32,13 +32,31 @@
     <artifactId>wildscribe-parent</artifactId>
     <version>3.1.1.Final-SNAPSHOT</version>
 
+    <packaging>pom</packaging>
+
     <name>Wildscribe</name>
     <description>
-        Documentation generator for all Application servers based
-        on Wildfly, including AS 7.x, Wildfly 8.x, JBoss EAP 6.x and JBoss EAP 7.x
+        Documentation generator for all application servers based
+        on the WildFly Core technology stack, including JBoss AS 7.x, WildFly 8.x
+        and later and JBoss EAP 6.x and later.
     </description>
+    <url>https://github.com/wildfly/wildscribe</url>
 
-    <packaging>pom</packaging>
+    <scm>
+        <connection>scm:git:git@github.com:wildfly/wildscribe.git</connection>
+        <developerConnection>scm:git:git@github.com:wildfly/wildscribe.git</developerConnection>
+        <url>https://github.com/wildfly/wildscribe</url>
+    </scm>
+
+    <developers>
+        <developer>
+            <id>bstansberry</id>
+            <name>Brian Stansberry</name>
+            <url>https://github.com/bstansberry</url>
+            <organization>IBM</organization>
+            <organizationUrl>https://www.ibm.com</organizationUrl>
+        </developer>
+    </developers>
 
     <licenses>
         <license>
@@ -48,15 +66,7 @@
         </license>
     </licenses>
 
-    <url>https://wildscribe.github.io</url>
-
     <mailingLists>
-        <mailingList>
-            <name>JBoss User List</name>
-            <subscribe>https://lists.jboss.org/mailman/listinfo/jboss-user</subscribe>
-            <unsubscribe>https://lists.jboss.org/mailman/listinfo/jboss-user</unsubscribe>
-            <archive>http://lists.jboss.org/pipermail/jboss-user/</archive>
-        </mailingList>
         <mailingList>
             <name>WildFly Developer List</name>
             <subscribe>https://lists.jboss.org/mailman/listinfo/wildfly-dev</subscribe>
@@ -114,12 +124,6 @@
         <module>message-dumper</module>
         <module>wildscribe-maven-plugin</module>
     </modules>
-
-    <scm>
-        <connection>scm:git://github.com/wildscribe/wildscribe.git</connection>
-        <developerConnection>scm:git://github.com/wildscribe/wildscribe.git</developerConnection>
-        <url>https://github.com/wildscribe/wildscribe</url>
-    </scm>
 
     <issueManagement>
         <system>GitHub Issues</system>
