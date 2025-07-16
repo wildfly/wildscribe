@@ -116,6 +116,13 @@
         <!-- Checkstyle configuration -->
         <linkXRef>false</linkXRef>
         <version.htmlcompressor>1.5.2</version.htmlcompressor>
+
+        <!-- Nexus deployment settings -->
+        <nexus.repo.name>wildfly-staging</nexus.repo.name>
+        <nexus.destination.repo.name>releases</nexus.destination.repo.name>
+        <nexus.staging.tag>wildscribe-${project.version}</nexus.staging.tag>
+
+
     </properties>
 
     <modules>
