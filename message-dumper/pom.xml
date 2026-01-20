@@ -11,6 +11,9 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>message-dumper</artifactId>
+
+    <name>Wildscribe: Message Dumper</name>
+
     <build>
         <plugins>
             <plugin>

@@ -31,7 +31,7 @@
 
     <artifactId>wildscribe-model-dumper</artifactId>
    
-    <name>Wildscribe Model Dumper</name>
+    <name>Wildscribe: Model Dumper</name>
 
     <dependencies>
 

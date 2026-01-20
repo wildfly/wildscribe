@@ -34,9 +34,10 @@
 
     <packaging>pom</packaging>
 
-    <name>Wildscribe</name>
+    <name>Wildscribe: Parent</name>
+
     <description>
-        Documentation generator for all application servers based
+        Management API documentation generator for all application servers based
         on the WildFly Core technology stack, including JBoss AS 7.x, WildFly 8.x
         and later and JBoss EAP 6.x and later.
     </description>
