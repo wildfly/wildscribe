@@ -98,7 +98,7 @@
         <version.org.jboss.logging.jboss-logging>3.6.1.Final</version.org.jboss.logging.jboss-logging>
         <version.org.wildfly.core>24.0.1.Final</version.org.wildfly.core>
         <version.org.wildfly.plugins>5.0.0.Final</version.org.wildfly.plugins>
-        <version.org.wildfly.plugins.tools>1.1.0.Final</version.org.wildfly.plugins.tools>
+        <version.org.wildfly.plugins.tools>1.2.4.Final</version.org.wildfly.plugins.tools>
 
         <!-- maven dependencies -->
         <version.javax.inject.javax.inject>1</version.javax.inject.javax.inject>
