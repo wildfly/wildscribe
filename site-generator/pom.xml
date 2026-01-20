@@ -31,7 +31,7 @@
 
     <artifactId>wildscribe-site-generator</artifactId>
 
-    <name>Wildscribe Site Generator</name>
+    <name>Wildscribe: Site Generator</name>
 
     <properties>
         <versions.txt.dir>${project.parent.basedir}/models/standalone</versions.txt.dir>

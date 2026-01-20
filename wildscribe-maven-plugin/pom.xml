@@ -28,6 +28,8 @@
     <artifactId>wildscribe-maven-plugin</artifactId>
     <packaging>maven-plugin</packaging>
 
+    <name>Wildscribe: Maven Plugin</name>
+
     <prerequisites>
         <maven>${maven.min.version}</maven>
     </prerequisites>
