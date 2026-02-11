@@ -51,7 +51,7 @@ Before beginning work on an issue, it's good to start a thread in the [wildfly-d
 
 
 ### Good First Issues
-Want to contribute to the Wildscribe project but aren't quite sure where to start? Look for issues with the `good-first-issue` label. These are a triaged set of issues that are great for getting started on our project. These can be found [here](https://github.com/wildfly/wildscribe/issues/?q=is%3Aissue state%3Aopen label%3Agood-first-issue).
+Want to contribute to the Wildscribe project but aren't quite sure where to start? Look for issues with the `good first issue` label. These are a triaged set of issues that are great for getting started on our project. These can be found [here](https://github.com/wildfly/wildscribe/pulls?q=is%3Aopen+is%3Apr+label%3A%22good+first+issue%22).
 
 
 ## Setting up your Developer Environment
@@ -70,15 +70,15 @@ Add a remote ref to upstream, for pulling future updates.
 For example:
 
 ```
-git remote add upstream https://github.com/wildfly/Wildscribe
+git remote add upstream https://github.com/wildfly/wildscribe
 ```
 
-It is recommended that you use a separate branch for every issue you work on. To keep things straightforward and memorable, you can name each branch using the JIRA issue number. This way, you can have multiple PRs open for different issues.
+It is recommended that you use a separate branch for every issue you work on. To keep things straightforward and memorable, you can name each branch using the GitHub issue number. This way, you can have multiple PRs open for different issues.
 ```bash
 git checkout -b Issue_9999
 ```
 
-To build `Wildscribe` run:
+To build `wildscribe` run:
 ```bash
 mvn clean install
 ```
@@ -101,6 +101,6 @@ When submitting a PR, please keep the following guidelines in mind:
 
 1. In general, it's good practice to squash all of your commits into a single commit. For larger changes, it's ok to have multiple meaningful commits. If you need help with squashing your commits, feel free to ask us how to do this on your pull request. We're more than happy to help!
 
-  1. Please include the GitHub issue you worked on in the title of your pull request and in your commit message. For example, for issue [999](https://github.com/wildfly/Wildscribe/issues/999), the PR title and commit message should be `[Issue_999] Create a testcase which verifies behaviour of the foo`.
+  1. Please include the GitHub issue you worked on in the title of your pull request and in your commit message. For example, for issue [999](https://github.com/wildfly/wildscribe/issues/999), the PR title and commit message should be `[Issue_999] Create a testcase which verifies behaviour of the foo`.
 
-2. Please include the link to the JIRA issue you worked on in the description of the pull request. For example, if your PR adds a fix for [999](https://github.com/wildfly/Wildscribe/issues/999), the PR description should contain a link to https://github.com/wildfly/Wildscribe/issues/999.
+2. Please include the link to the GitHub issue you worked on in the description of the pull request. For example, if your PR adds a fix for [999](https://github.com/wildfly/wildscribe/issues/999), the PR description should contain a link to https://github.com/wildfly/wildscribe/issues/999.
